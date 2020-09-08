@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>EX3</title>
+    <script>
+         function cal(){
+                let soma = 0
+                let cont = 0
+                let resp = 's'
+                while (resp != 'n') {
+                    let numero = Number(prompt("Informe um numero"))
+                    soma = soma + numero
+                    cont++
+                    resp = prompt("Deseja continuar? Informe s para sim e n para não").toLowerCase()
+                    
+                }
+                document.getElementById("resul").innerHTML = `MEDIA = ${soma/cont}`
+         }
+    </script>
+</head>
+<body>
+    <h2>EX EXEMPLO</h2>
+    <h2>Click no botão iniciar</h2>
+    <h3><button type="button" onclick="cal()">CALCULAR</button></h3>
+    <h3 id="resul"></h3>
+</body>
+</html>
