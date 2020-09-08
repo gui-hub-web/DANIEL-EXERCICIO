@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TRABUADA</title>
+    <script>
+         function cal(){
+                let soma = 0
+                let cont = 1
+                let qt = Number(prompt("Informe a quantidade de elementos"))
+                while (cont <= qt) {
+                    let numero = Number(prompt("Informe um numero"))
+                    soma = soma + numero
+                    cont++
+                }
+                document.getElementById("resul").innerHTML = `MEDIA = ${soma/qt}`
+         }
+    </script>
+</head>
+<body>
+    <h2>EX EXEMPLO</h2>
+    <h2>Click no botão iniciar</h2>
+    <h3><button type="button" onclick="cal()">CALCULAR</button></h3>
+    <h3 id="resul"></h3>
+</body>
+</html>
